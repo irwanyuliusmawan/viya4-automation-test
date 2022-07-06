@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<parameter name="author" value="SAS" />
+	<parameter name="username" value="viya_admin" />
+	<parameter name="password" value="Password123" />
+	<parameter name="browserName" value="chrome" />
+	<parameter name="headLess" value="true" />
+	<parameter name="sampleDataPath" value="C://Test//csv_file.csv" />
+	<parameter name="sampleDemographicDataPath" value="C://Test//demographics.csv" />
+	<!--<test name="SAS Search">
+		<parameter name="url" value="https://www.sas.com/" />
+		<classes>
+			<class name="com.sas.viya.SASNewWork">
+				<methods>
+					<include name="SignIn"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+	<test name="Kubernetes Cluster">
+		<parameter name="namespace" value="sasviya4aws" />
+		<classes>
+			<class name="com.sas.viya.SASKubernetesCluster">
+				<methods>
+					<include name="PodsValidation"></include>
+					<include name="NodesValidation"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="SASDriveTest">
+		<parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASDrive" />
+		<classes>
+			<class name="com.sas.viya.SASDrive">
+				<methods>
+					<include name="SignIn"></include>
+					<include name="SignOut"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="SASEnvironmentManagerTest">
+		<parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASEnvironmentManager" />
+		<classes>
+			<class name="com.sas.viya.SASEnvironmentManager">
+				<methods>
+					<include name="SignIn"></include>
+					<include name="CheckUsersAndGroups"></include>
+					<include name="ValidateValidationFolder"></include>
+					<include name="AccessServerPage"></include>
+					<include name="ImportData"></include>
+					<include name="ImportDemographic"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="SASStudioTest">
+		<parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASStudio" />
+		<classes>
+			<class name="com.sas.viya.SASStudio">
+				<methods>
+					<include name="SignIn"></include>
+					<include name="CodeExecution1"></include>
+					<include name="CodeExecution2"></include>
+					<include name="CodeExecution3"></include>
+					<include name="CodeExecution4"></include>
+					<include name="CodeExecution5"></include>
+					<include name="SignOut"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="SASVisualAnalyticsTest">
+		<parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASVisualAnalytics" />
+		<classes>
+			<class name="com.sas.viya.SASVisualAnalytics">
+				<methods>
+					<include name="SignIn"></include>
+					<include name="Report1"></include>
+					<include name="Report2"></include>
+					<include name="SignOut"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

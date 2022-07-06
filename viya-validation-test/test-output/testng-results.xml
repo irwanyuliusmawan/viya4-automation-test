@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="22" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-06T19:02:15 IST" name="Suite" finished-at="2022-07-06T19:21:01 IST" duration-ms="1125482">
+    <groups>
+      <group name="functional">
+        <method signature="SASKubernetesCluster.PodsValidation(java.lang.String)[pri:1, instance:com.sas.viya.SASKubernetesCluster@55182842]" name="PodsValidation" class="com.sas.viya.SASKubernetesCluster"/>
+        <method signature="SASKubernetesCluster.NodesValidation()[pri:2, instance:com.sas.viya.SASKubernetesCluster@55182842]" name="NodesValidation" class="com.sas.viya.SASKubernetesCluster"/>
+        <method signature="SASDrive.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASDrive@44c03695]" name="SignIn" class="com.sas.viya.SASDrive"/>
+        <method signature="SASDrive.SignOut()[pri:2, instance:com.sas.viya.SASDrive@44c03695]" name="SignOut" class="com.sas.viya.SASDrive"/>
+        <method signature="SASEnvironmentManager.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" name="SignIn" class="com.sas.viya.SASEnvironmentManager"/>
+        <method signature="SASEnvironmentManager.CheckUsersAndGroups()[pri:2, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" name="CheckUsersAndGroups" class="com.sas.viya.SASEnvironmentManager"/>
+        <method signature="SASEnvironmentManager.ValidateValidationFolder()[pri:3, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" name="ValidateValidationFolder" class="com.sas.viya.SASEnvironmentManager"/>
+        <method signature="SASEnvironmentManager.AccessServerPage()[pri:4, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" name="AccessServerPage" class="com.sas.viya.SASEnvironmentManager"/>
+        <method signature="SASEnvironmentManager.ImportData(java.lang.String)[pri:5, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" name="ImportData" class="com.sas.viya.SASEnvironmentManager"/>
+        <method signature="SASEnvironmentManager.ImportDemographic(java.lang.String)[pri:6, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" name="ImportDemographic" class="com.sas.viya.SASEnvironmentManager"/>
+        <method signature="SASStudio.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASStudio@185a6e9]" name="SignIn" class="com.sas.viya.SASStudio"/>
+        <method signature="SASStudio.CodeExecution1()[pri:2, instance:com.sas.viya.SASStudio@185a6e9]" name="CodeExecution1" class="com.sas.viya.SASStudio"/>
+        <method signature="SASStudio.CodeExecution2()[pri:3, instance:com.sas.viya.SASStudio@185a6e9]" name="CodeExecution2" class="com.sas.viya.SASStudio"/>
+        <method signature="SASStudio.CodeExecution3()[pri:4, instance:com.sas.viya.SASStudio@185a6e9]" name="CodeExecution3" class="com.sas.viya.SASStudio"/>
+        <method signature="SASStudio.CodeExecution4()[pri:5, instance:com.sas.viya.SASStudio@185a6e9]" name="CodeExecution4" class="com.sas.viya.SASStudio"/>
+        <method signature="SASStudio.CodeExecution5()[pri:6, instance:com.sas.viya.SASStudio@185a6e9]" name="CodeExecution5" class="com.sas.viya.SASStudio"/>
+        <method signature="SASStudio.SignOut()[pri:7, instance:com.sas.viya.SASStudio@185a6e9]" name="SignOut" class="com.sas.viya.SASStudio"/>
+        <method signature="SASVisualAnalytics.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" name="SignIn" class="com.sas.viya.SASVisualAnalytics"/>
+        <method signature="SASVisualAnalytics.Report1()[pri:2, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" name="Report1" class="com.sas.viya.SASVisualAnalytics"/>
+        <method signature="SASVisualAnalytics.Report2()[pri:3, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" name="Report2" class="com.sas.viya.SASVisualAnalytics"/>
+        <method signature="SASVisualAnalytics.SignOut()[pri:4, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" name="SignOut" class="com.sas.viya.SASVisualAnalytics"/>
+      </group> <!-- functional -->
+      <group name="smoke">
+        <method signature="SASKubernetesCluster.PodsValidation(java.lang.String)[pri:1, instance:com.sas.viya.SASKubernetesCluster@55182842]" name="PodsValidation" class="com.sas.viya.SASKubernetesCluster"/>
+        <method signature="SASKubernetesCluster.NodesValidation()[pri:2, instance:com.sas.viya.SASKubernetesCluster@55182842]" name="NodesValidation" class="com.sas.viya.SASKubernetesCluster"/>
+        <method signature="SASDrive.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASDrive@44c03695]" name="SignIn" class="com.sas.viya.SASDrive"/>
+        <method signature="SASDrive.SignOut()[pri:2, instance:com.sas.viya.SASDrive@44c03695]" name="SignOut" class="com.sas.viya.SASDrive"/>
+        <method signature="SASEnvironmentManager.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" name="SignIn" class="com.sas.viya.SASEnvironmentManager"/>
+        <method signature="SASStudio.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASStudio@185a6e9]" name="SignIn" class="com.sas.viya.SASStudio"/>
+        <method signature="SASStudio.SignOut()[pri:7, instance:com.sas.viya.SASStudio@185a6e9]" name="SignOut" class="com.sas.viya.SASStudio"/>
+        <method signature="SASVisualAnalytics.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" name="SignIn" class="com.sas.viya.SASVisualAnalytics"/>
+        <method signature="SASVisualAnalytics.SignOut()[pri:4, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" name="SignOut" class="com.sas.viya.SASVisualAnalytics"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-07-06T19:02:15 IST" name="Kubernetes Cluster" finished-at="2022-07-06T19:02:46 IST" duration-ms="30924">
+      <class name="com.sas.viya.SASKubernetesCluster">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.sas.viya.SASKubernetesCluster@55182842]" started-at="2022-07-06T19:02:15 IST" name="setup" finished-at="2022-07-06T19:02:20 IST" duration-ms="4432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4e1ffe54]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="PodsValidation(java.lang.String)[pri:1, instance:com.sas.viya.SASKubernetesCluster@55182842]" started-at="2022-07-06T19:02:20 IST" name="PodsValidation" finished-at="2022-07-06T19:02:25 IST" duration-ms="5930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sasviya4aws]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PodsValidation -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASKubernetesCluster@55182842]" started-at="2022-07-06T19:02:26 IST" name="checkStatus" finished-at="2022-07-06T19:02:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASKubernetesCluster.PodsValidation(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=PodsValidation status=SUCCESS method=SASKubernetesCluster.PodsValidation(java.lang.String)[pri:1, instance:com.sas.viya.SASKubernetesCluster@55182842] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="NodesValidation()[pri:2, instance:com.sas.viya.SASKubernetesCluster@55182842]" started-at="2022-07-06T19:02:26 IST" name="NodesValidation" finished-at="2022-07-06T19:02:46 IST" duration-ms="20471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NodesValidation -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASKubernetesCluster@55182842]" started-at="2022-07-06T19:02:46 IST" name="checkStatus" finished-at="2022-07-06T19:02:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASKubernetesCluster.NodesValidation() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=NodesValidation status=SUCCESS method=SASKubernetesCluster.NodesValidation()[pri:2, instance:com.sas.viya.SASKubernetesCluster@55182842] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.sas.viya.SASKubernetesCluster@55182842]" started-at="2022-07-06T19:02:46 IST" name="teardown" finished-at="2022-07-06T19:02:46 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.sas.viya.SASKubernetesCluster -->
+    </test> <!-- Kubernetes Cluster -->
+    <test started-at="2022-07-06T19:02:46 IST" name="SASDriveTest" finished-at="2022-07-06T19:04:39 IST" duration-ms="112770">
+      <class name="com.sas.viya.SASDrive">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.sas.viya.SASDrive@44c03695]" started-at="2022-07-06T19:02:46 IST" name="setup" finished-at="2022-07-06T19:02:47 IST" duration-ms="1292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@720cbb7d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASDrive@44c03695]" started-at="2022-07-06T19:02:47 IST" name="SignIn" finished-at="2022-07-06T19:04:18 IST" duration-ms="91054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://sinbrv.gelsandbox.aws.unx.sas.com/SASDrive]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[viya_admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASDrive@44c03695]" started-at="2022-07-06T19:04:18 IST" name="checkStatus" finished-at="2022-07-06T19:04:19 IST" duration-ms="871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASDrive.SignIn(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SignIn status=SUCCESS method=SASDrive.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASDrive@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="SignOut()[pri:2, instance:com.sas.viya.SASDrive@44c03695]" started-at="2022-07-06T19:04:19 IST" name="SignOut" finished-at="2022-07-06T19:04:23 IST" duration-ms="3348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignOut -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASDrive@44c03695]" started-at="2022-07-06T19:04:23 IST" name="checkStatus" finished-at="2022-07-06T19:04:39 IST" duration-ms="16083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASDrive.SignOut()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SignOut status=SUCCESS method=SASDrive.SignOut()[pri:2, instance:com.sas.viya.SASDrive@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.sas.viya.SASDrive@44c03695]" started-at="2022-07-06T19:04:39 IST" name="teardown" finished-at="2022-07-06T19:04:39 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.sas.viya.SASDrive -->
+    </test> <!-- SASDriveTest -->
+    <test started-at="2022-07-06T19:04:39 IST" name="SASEnvironmentManagerTest" finished-at="2022-07-06T19:14:09 IST" duration-ms="570588">
+      <class name="com.sas.viya.SASEnvironmentManager">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:04:39 IST" name="setup" finished-at="2022-07-06T19:04:40 IST" duration-ms="1296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@43d00636]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:04:40 IST" name="SignIn" finished-at="2022-07-06T19:11:56 IST" duration-ms="436177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://sinbrv.gelsandbox.aws.unx.sas.com/SASEnvironmentManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[viya_admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:11:56 IST" name="checkStatus" finished-at="2022-07-06T19:11:57 IST" duration-ms="583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASEnvironmentManager.SignIn(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SignIn status=SUCCESS method=SASEnvironmentManager.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASEnvironmentManager@217ed35e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="CheckUsersAndGroups()[pri:2, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:11:57 IST" name="CheckUsersAndGroups" finished-at="2022-07-06T19:12:10 IST" duration-ms="12842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckUsersAndGroups -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:12:10 IST" name="checkStatus" finished-at="2022-07-06T19:12:10 IST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASEnvironmentManager.CheckUsersAndGroups() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=CheckUsersAndGroups status=SUCCESS method=SASEnvironmentManager.CheckUsersAndGroups()[pri:2, instance:com.sas.viya.SASEnvironmentManager@217ed35e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="ValidateValidationFolder()[pri:3, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:12:10 IST" name="ValidateValidationFolder" finished-at="2022-07-06T19:12:30 IST" duration-ms="19850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateValidationFolder -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:12:30 IST" name="checkStatus" finished-at="2022-07-06T19:12:30 IST" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASEnvironmentManager.ValidateValidationFolder() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=ValidateValidationFolder status=SUCCESS method=SASEnvironmentManager.ValidateValidationFolder()[pri:3, instance:com.sas.viya.SASEnvironmentManager@217ed35e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="AccessServerPage()[pri:4, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:12:30 IST" name="AccessServerPage" finished-at="2022-07-06T19:12:51 IST" duration-ms="20555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccessServerPage -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:12:51 IST" name="checkStatus" finished-at="2022-07-06T19:12:51 IST" duration-ms="271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASEnvironmentManager.AccessServerPage() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=AccessServerPage status=SUCCESS method=SASEnvironmentManager.AccessServerPage()[pri:4, instance:com.sas.viya.SASEnvironmentManager@217ed35e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="ImportData(java.lang.String)[pri:5, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:12:51 IST" name="ImportData" finished-at="2022-07-06T19:13:30 IST" duration-ms="38502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C://Test//csv_file.csv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ImportData -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:13:30 IST" name="checkStatus" finished-at="2022-07-06T19:13:30 IST" duration-ms="299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASEnvironmentManager.ImportData(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=ImportData status=SUCCESS method=SASEnvironmentManager.ImportData(java.lang.String)[pri:5, instance:com.sas.viya.SASEnvironmentManager@217ed35e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="ImportDemographic(java.lang.String)[pri:6, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:13:30 IST" name="ImportDemographic" finished-at="2022-07-06T19:14:09 IST" duration-ms="39187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C://Test//demographics.csv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ImportDemographic -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:14:09 IST" name="checkStatus" finished-at="2022-07-06T19:14:09 IST" duration-ms="297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASEnvironmentManager.ImportDemographic(java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=ImportDemographic status=SUCCESS method=SASEnvironmentManager.ImportDemographic(java.lang.String)[pri:6, instance:com.sas.viya.SASEnvironmentManager@217ed35e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.sas.viya.SASEnvironmentManager@217ed35e]" started-at="2022-07-06T19:14:09 IST" name="teardown" finished-at="2022-07-06T19:14:09 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.sas.viya.SASEnvironmentManager -->
+    </test> <!-- SASEnvironmentManagerTest -->
+    <test started-at="2022-07-06T19:14:09 IST" name="SASStudioTest" finished-at="2022-07-06T19:17:20 IST" duration-ms="190837">
+      <class name="com.sas.viya.SASStudio">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:14:09 IST" name="setup" finished-at="2022-07-06T19:14:11 IST" duration-ms="1726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a72160a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:14:11 IST" name="SignIn" finished-at="2022-07-06T19:16:05 IST" duration-ms="113652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://sinbrv.gelsandbox.aws.unx.sas.com/SASStudio]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[viya_admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:05 IST" name="checkStatus" finished-at="2022-07-06T19:16:05 IST" duration-ms="387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASStudio.SignIn(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SignIn status=SUCCESS method=SASStudio.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASStudio@185a6e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="CodeExecution1()[pri:2, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:05 IST" name="CodeExecution1" finished-at="2022-07-06T19:16:23 IST" duration-ms="17428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CodeExecution1 -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:23 IST" name="checkStatus" finished-at="2022-07-06T19:16:23 IST" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASStudio.CodeExecution1() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=CodeExecution1 status=SUCCESS method=SASStudio.CodeExecution1()[pri:2, instance:com.sas.viya.SASStudio@185a6e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="CodeExecution2()[pri:3, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:23 IST" name="CodeExecution2" finished-at="2022-07-06T19:16:39 IST" duration-ms="16119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CodeExecution2 -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:39 IST" name="checkStatus" finished-at="2022-07-06T19:16:39 IST" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASStudio.CodeExecution2() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=CodeExecution2 status=SUCCESS method=SASStudio.CodeExecution2()[pri:3, instance:com.sas.viya.SASStudio@185a6e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="CodeExecution3()[pri:4, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:39 IST" name="CodeExecution3" finished-at="2022-07-06T19:16:52 IST" duration-ms="13004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CodeExecution3 -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:52 IST" name="checkStatus" finished-at="2022-07-06T19:16:53 IST" duration-ms="910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASStudio.CodeExecution3() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=CodeExecution3 status=SUCCESS method=SASStudio.CodeExecution3()[pri:4, instance:com.sas.viya.SASStudio@185a6e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="CodeExecution4()[pri:5, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:16:53 IST" name="CodeExecution4" finished-at="2022-07-06T19:17:04 IST" duration-ms="10465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CodeExecution4 -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:17:04 IST" name="checkStatus" finished-at="2022-07-06T19:17:05 IST" duration-ms="940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASStudio.CodeExecution4() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=CodeExecution4 status=SUCCESS method=SASStudio.CodeExecution4()[pri:5, instance:com.sas.viya.SASStudio@185a6e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="CodeExecution5()[pri:6, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:17:05 IST" name="CodeExecution5" finished-at="2022-07-06T19:17:16 IST" duration-ms="10988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CodeExecution5 -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:17:16 IST" name="checkStatus" finished-at="2022-07-06T19:17:17 IST" duration-ms="928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASStudio.CodeExecution5() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=CodeExecution5 status=SUCCESS method=SASStudio.CodeExecution5()[pri:6, instance:com.sas.viya.SASStudio@185a6e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="SignOut()[pri:7, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:17:17 IST" name="SignOut" finished-at="2022-07-06T19:17:20 IST" duration-ms="3327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignOut -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:17:20 IST" name="checkStatus" finished-at="2022-07-06T19:17:20 IST" duration-ms="287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASStudio.SignOut()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SignOut status=SUCCESS method=SASStudio.SignOut()[pri:7, instance:com.sas.viya.SASStudio@185a6e9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.sas.viya.SASStudio@185a6e9]" started-at="2022-07-06T19:17:20 IST" name="teardown" finished-at="2022-07-06T19:17:20 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.sas.viya.SASStudio -->
+    </test> <!-- SASStudioTest -->
+    <test started-at="2022-07-06T19:17:20 IST" name="SASVisualAnalyticsTest" finished-at="2022-07-06T19:21:01 IST" duration-ms="220320">
+      <class name="com.sas.viya.SASVisualAnalytics">
+        <test-method is-config="true" signature="initialiseExtentReports()[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:02:15 IST" name="initialiseExtentReports" finished-at="2022-07-06T19:02:15 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseExtentReports -->
+        <test-method is-config="true" signature="setup(org.testng.ITestContext,java.lang.String)[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:17:20 IST" name="setup" finished-at="2022-07-06T19:17:22 IST" duration-ms="1260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a01c55]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:17:22 IST" name="SignIn" finished-at="2022-07-06T19:18:56 IST" duration-ms="94573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://sinbrv.gelsandbox.aws.unx.sas.com/SASVisualAnalytics]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[viya_admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:18:56 IST" name="checkStatus" finished-at="2022-07-06T19:18:56 IST" duration-ms="318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASVisualAnalytics.SignIn(java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SignIn status=SUCCESS method=SASVisualAnalytics.SignIn(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.sas.viya.SASVisualAnalytics@4116aac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="Report1()[pri:2, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:18:56 IST" name="Report1" finished-at="2022-07-06T19:19:58 IST" duration-ms="61569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Report1 -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:19:58 IST" name="checkStatus" finished-at="2022-07-06T19:19:58 IST" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASVisualAnalytics.Report1() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Report1 status=SUCCESS method=SASVisualAnalytics.Report1()[pri:2, instance:com.sas.viya.SASVisualAnalytics@4116aac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="Report2()[pri:3, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:19:58 IST" name="Report2" finished-at="2022-07-06T19:20:57 IST" duration-ms="58492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Report2 -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:20:57 IST" name="checkStatus" finished-at="2022-07-06T19:20:57 IST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASVisualAnalytics.Report2() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Report2 status=SUCCESS method=SASVisualAnalytics.Report2()[pri:3, instance:com.sas.viya.SASVisualAnalytics@4116aac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="SignOut()[pri:4, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:20:57 IST" name="SignOut" finished-at="2022-07-06T19:21:00 IST" duration-ms="3243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignOut -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:21:00 IST" name="checkStatus" finished-at="2022-07-06T19:21:01 IST" duration-ms="272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sas.viya.SASVisualAnalytics.SignOut()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=SignOut status=SUCCESS method=SASVisualAnalytics.SignOut()[pri:4, instance:com.sas.viya.SASVisualAnalytics@4116aac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:21:01 IST" name="teardown" finished-at="2022-07-06T19:21:01 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="generateExtentReports()[pri:0, instance:com.sas.viya.SASVisualAnalytics@4116aac9]" started-at="2022-07-06T19:21:01 IST" name="generateExtentReports" finished-at="2022-07-06T19:21:02 IST" duration-ms="1469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReports -->
+      </class> <!-- com.sas.viya.SASVisualAnalytics -->
+    </test> <!-- SASVisualAnalyticsTest -->
+  </suite> <!-- Suite -->
+</testng-results>
