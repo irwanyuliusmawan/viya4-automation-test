@@ -68,7 +68,8 @@ Same selenium project can also be executed in Ubuntu or any other Linux OS.
    ```
 
 2. Install Java 11+
-Execute the following command to install the default Java Runtime Environment (JRE), which will install the JRE from OpenJDK 11
+Execute the following command to install the default Java Runtime Environment (JRE), 
+which will install the JRE from OpenJDK 11
 ```
 sudo apt install default-jre
 ```
