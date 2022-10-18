@@ -4,7 +4,7 @@
 	<parameter name="username" value="viya_admin" />
 	<parameter name="password" value="Password123" />
 	<parameter name="browserName" value="chrome" />
-	<parameter name="headLess" value="true" />
+	<parameter name="headLess" value="false" />
 	<parameter name="sampleDataPath" value="C://Test//csv_file.csv" />
 	<parameter name="sampleDemographicDataPath" value="C://Test//demographics.csv" />
 	<!--<test name="SAS Search">
@@ -16,7 +16,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test>-->
+	</test>
 	<test name="Kubernetes Cluster">
 		<parameter name="namespace" value="sasviya4aws" />
 		<classes>
@@ -38,8 +38,8 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
-	<test name="SASEnvironmentManagerTest">
+	</test>-->
+	<!--<test name="SASEnvironmentManagerTest">
 		<parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASEnvironmentManager" />
 		<classes>
 			<class name="com.sas.viya.SASEnvironmentManager">
@@ -79,6 +79,17 @@
 					<include name="Report1"></include>
 					<include name="Report2"></include>
 					<include name="SignOut"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>-->
+	<test name="SASDataExplorer">
+		<parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASEnvironmentManager" />
+		<classes>
+			<class name="com.sas.viya.SASDataExplorer">
+				<methods>
+					<include name="SignIn"></include>
+					<include name="VerifyManageData"></include>
 				</methods>
 			</class>
 		</classes>

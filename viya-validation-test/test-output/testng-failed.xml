@@ -2,25 +2,25 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <parameter name="password" value="Password123"/>
-  <parameter name="headLess" value="true"/>
+  <parameter name="headLess" value="false"/>
   <parameter name="author" value="SAS"/>
   <parameter name="sampleDataPath" value="C://Test//csv_file.csv"/>
   <parameter name="browserName" value="chrome"/>
   <parameter name="sampleDemographicDataPath" value="C://Test//demographics.csv"/>
   <parameter name="username" value="viya_admin"/>
-  <test thread-count="5" name="SASVisualAnalyticsTest(failed)">
-    <parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASVisualAnalytics"/>
+  <test thread-count="5" name="SASDriveTest(failed)">
+    <parameter name="url" value="https://sinbrv.gelsandbox.aws.unx.sas.com/SASDrive"/>
     <classes>
-      <class name="com.sas.viya.SASVisualAnalytics">
+      <class name="com.sas.viya.SASDrive">
         <methods>
           <include name="generateExtentReports"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="Report2"/>
+          <include name="SignOut"/>
           <include name="checkStatus"/>
           <include name="initialiseExtentReports"/>
         </methods>
-      </class> <!-- com.sas.viya.SASVisualAnalytics -->
+      </class> <!-- com.sas.viya.SASDrive -->
     </classes>
-  </test> <!-- SASVisualAnalyticsTest(failed) -->
+  </test> <!-- SASDriveTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

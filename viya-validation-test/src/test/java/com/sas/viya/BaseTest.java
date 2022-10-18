@@ -112,8 +112,8 @@ public class BaseTest {
 	@AfterSuite
 	public void generateExtentReports() throws Exception {
 		extentReports.flush();
-		Desktop.getDesktop().browse(new File("AllTests.html").toURI());
-		Desktop.getDesktop().browse(new File("FailedTests.html").toURI());
+		//Desktop.getDesktop().browse(new File("AllTests.html").toURI());
+		//Desktop.getDesktop().browse(new File("FailedTests.html").toURI());
 	}
 	
 	@AfterMethod
@@ -240,8 +240,6 @@ public class BaseTest {
 	        // calculates the coordinate where the String is painted
 	        int centerX = (sourceImage.getWidth() - (int) rect.getWidth()) / 2;
 	        int centerY = sourceImage.getHeight() - 150;
-	        System.out.println(centerX);
-	        System.out.println(centerY);
 	 
 	        // paints the textual watermark
 	        g2d.drawString(text, 25, centerY);
@@ -249,7 +247,6 @@ public class BaseTest {
 	        ImageIO.write(sourceImage, "png", destImageFile);
 	        g2d.dispose();
 	 
-	        System.out.println("The tex watermark is added to the image.");
 	 
 	    } catch (IOException ex) {
 	        System.err.println(ex);

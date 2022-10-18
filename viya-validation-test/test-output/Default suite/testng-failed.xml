@@ -3,12 +3,44 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.sas.viya.SASNewWork">
+        <methods>
+          <include name="generateExtentReports"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="SignIn"/>
+          <include name="checkStatus"/>
+          <include name="initialiseExtentReports"/>
+        </methods>
+      </class> <!-- com.sas.viya.SASNewWork -->
+      <class name="com.sas.viya.SASKubernetesCluster">
+        <methods>
+          <include name="setup"/>
+          <include name="generateExtentReports"/>
+          <include name="NodesValidation"/>
+          <include name="teardown"/>
+          <include name="checkStatus"/>
+          <include name="PodsValidation"/>
+          <include name="initialiseExtentReports"/>
+        </methods>
+      </class> <!-- com.sas.viya.SASKubernetesCluster -->
+      <class name="com.sas.viya.SASDrive">
+        <methods>
+          <include name="setup"/>
+          <include name="generateExtentReports"/>
+          <include name="teardown"/>
+          <include name="SignOut"/>
+          <include name="checkStatus"/>
+          <include name="initialiseExtentReports"/>
+          <include name="SignIn"/>
+        </methods>
+      </class> <!-- com.sas.viya.SASDrive -->
       <class name="com.sas.viya.SASVisualAnalytics">
         <methods>
           <include name="Report1"/>
-          <include name="SignIn"/>
-          <include name="setup"/>
           <include name="generateExtentReports"/>
+          <include name="setup"/>
+          <include name="SignIn"/>
           <include name="teardown"/>
           <include name="SignOut"/>
           <include name="Report2"/>
@@ -16,6 +48,38 @@
           <include name="initialiseExtentReports"/>
         </methods>
       </class> <!-- com.sas.viya.SASVisualAnalytics -->
+      <class name="com.sas.viya.SASStudio">
+        <methods>
+          <include name="SignOut"/>
+          <include name="CodeExecution2"/>
+          <include name="generateExtentReports"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="CodeExecution5"/>
+          <include name="CodeExecution1"/>
+          <include name="checkStatus"/>
+          <include name="CodeExecution4"/>
+          <include name="CodeExecution3"/>
+          <include name="initialiseExtentReports"/>
+          <include name="SignIn"/>
+        </methods>
+      </class> <!-- com.sas.viya.SASStudio -->
+      <class name="com.sas.viya.SASEnvironmentManager">
+        <methods>
+          <include name="CheckUsersAndGroups"/>
+          <include name="SignIn"/>
+          <include name="setup"/>
+          <include name="SignOut"/>
+          <include name="generateExtentReports"/>
+          <include name="teardown"/>
+          <include name="ImportDemographic"/>
+          <include name="AccessServerPage"/>
+          <include name="checkStatus"/>
+          <include name="ImportData"/>
+          <include name="initialiseExtentReports"/>
+          <include name="ValidateValidationFolder"/>
+        </methods>
+      </class> <!-- com.sas.viya.SASEnvironmentManager -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
